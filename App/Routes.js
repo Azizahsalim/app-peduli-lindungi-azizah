@@ -1,8 +1,9 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
-  SplashScreen
-  
+  SplashScreen,
+  LoginScreen,
+  HomeScreen
 } from "./pages";
 
 const Stack = createStackNavigator();
@@ -15,8 +16,16 @@ export default Router = () => {
         component={SplashScreen}
         options={{ headerShown: false }}
       />
-      
-      
+      <Stack.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="HomeScreen"
+        component={HomeScreen}
+        options={{ headerShown: false }}
+      />
       
     </Stack.Navigator>
   );
