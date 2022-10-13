@@ -31,6 +31,11 @@ export default Router = () => {
         component={CovidTestScreen}
         options={{ headerShown: true, title: "COVID - 19 Test Results" }}
       />
+      <Stack.Screen
+        name="Imunisasi"
+        component={Imunisasi}
+        options={{ headerShown: true, title: "Vaksin dan Imunisasi" }}
+      />
     </Stack.Navigator>
   );
 };
