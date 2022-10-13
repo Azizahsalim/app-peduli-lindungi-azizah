@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     top: 320,
   },
   content: {
-    marginTop: 650,
+    marginTop: 600,
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     height: 30,
     left: 38,
     right: 228,
-    top: 650,
+    top: 620,
     bottom: 131,
     fontFamily: "Lato-Regular",
     fontStyle: "normal",
