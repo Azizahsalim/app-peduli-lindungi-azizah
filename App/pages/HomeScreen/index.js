@@ -7,6 +7,7 @@ import {
   Dimensions,
   Alert,
   Linking,
+  StatusBar
 } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
@@ -28,9 +29,14 @@ import {
 
 const windowHeight = Dimensions.get("window").height;
 
+
 export default HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.bgMainApp}>
+       <StatusBar
+  barStyle="dark-light"
+  backgroundColor="transparant"
+  />
       <View style={styles.container}>
         <Image source={user} style={styles.imgSize} />
         <Text style={styles.hi}>Hi, </Text>
@@ -180,7 +186,7 @@ export default HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   bgMainApp: {
     flex: 1,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#FFFFFF"
   },
   imgContainer: {
     alignItems: "center",
