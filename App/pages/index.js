@@ -10,6 +10,6 @@ export {
   SplashScreen,
   LoginScreen,
   Imunisasi,
-  CovidTestScreen
+  CovidTestScreen,
   
 };

@@ -3,7 +3,9 @@ import { createStackNavigator } from "@react-navigation/stack";
 import {
   SplashScreen,
   LoginScreen,
-  HomeScreen
+  HomeScreen,
+  CovidTestScreen,
+  Imunisasi
 } from "./pages";
 
 const Stack = createStackNavigator();
