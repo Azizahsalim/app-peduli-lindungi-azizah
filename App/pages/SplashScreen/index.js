@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     height: 30,
     left: 38,
     right: 228,
-    top: 670,
+    top: 650,
     bottom: 131,
     fontFamily: "Lato-Regular",
     fontStyle: "normal",
