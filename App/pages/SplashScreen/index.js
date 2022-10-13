@@ -5,7 +5,7 @@ import {
   View,
   Image,
   Text,
-  StyleSheet,
+  StyleSheet
 } from "react-native";
 import { L_peduli, kpc, kominfo, kemenkes, bumn } from "../../assets";
 

@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
   imgHeader: {
     width: 210,
     height: 200,
-    marginStart: 95,
+    marginStart: 90,
     marginTop: 80,
     backgroundColor: "white",
   },
