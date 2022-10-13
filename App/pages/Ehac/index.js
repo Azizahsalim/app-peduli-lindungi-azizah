@@ -1,23 +1,25 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, Dimensions } from "react-native";
-import { checkinlogo, childlogo, covidlogo } from "../../assets";
-
+import { bgtopehac, myehac, crtehac } from "../../assets";
 
 const windowHeight = Dimensions.get("window").height;
+const { width, height } = Dimensions.get("window");
 
-export default function Imunisasi() {
+export default Ehac = ({ navigation }) => {
   return (
     <View style={styles.bgApp}>
+      <View>
+        <Image source={bgtopehac} style={styles.gambartop} />
+      </View>
+
       <View style={styles.item}>
         <View style={{ flexDirection: "row" }}>
-          <Image source={covidlogo} style={styles.gambar1} />
+          <Image source={crtehac} style={styles.gambar1} />
           <View style={{ flexDirection: "column" }}>
-            <Text style={styles.teks1}>COVID-19 Vaccination</Text>
-            <Text style={styles.teks11}>See your vaccine certificate </Text>
-            <Text style={styles.teks11}>here</Text>
+            <Text style={styles.teks1}>Create e-HAC</Text>
+            <Text style={styles.teks11}>Electronic Health Alert Card</Text>
           </View>
         </View>
-
         <View
           style={{
             borderBottomColor: "black",
@@ -26,37 +28,17 @@ export default function Imunisasi() {
             marginStart: 90,
           }}
         />
-
         <View style={{ flexDirection: "row" }}>
-          <Image source={checkinlogo} style={styles.gambar2} />
+          <Image source={myehac} style={styles.gambar2} />
           <View style={{ flexDirection: "column" }}>
-            <Text style={styles.teks2}>Check-In Verification</Text>
-            <Text style={styles.teks22}>COVID-19 vaccine certificate</Text>
-            <Text style={styles.teks22}>verification in EU format</Text>
-          </View>
-        </View>
-
-        <View
-          style={{
-            borderBottomColor: "black",
-            borderBottomWidth: StyleSheet.hairlineWidth,
-            width: 220,
-            marginStart: 90,
-          }}
-        />
-
-        <View style={{ flexDirection: "row" }}>
-          <Image source={childlogo} style={styles.gambar2} />
-          <View style={{ flexDirection: "column" }}>
-            <Text style={styles.teks2}>Child Immunization</Text>
-            <Text style={styles.teks22}>See your child's immunization</Text>
-            <Text style={styles.teks22}>record here</Text>
+            <Text style={styles.teks2}>My e-HAC</Text>
+            <Text style={styles.teks22}>Check your history eHAC here</Text>
           </View>
         </View>
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   bgApp: {
@@ -66,38 +48,37 @@ const styles = StyleSheet.create({
   item: {
     backgroundColor: "white",
     padding: 15,
-    borderRadius: 30,
+    borderRadius: 15,
     flexDirection: "column",
     justifyContent: "space-between",
-    height: 350,
+    height: 220,
     marginTop: windowHeight / 23,
     marginLeft: 17,
     marginRight: 17,
     shadowColor: "black",
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 12,
     },
-    shadowOpacity: 0.2,
-    shadowRadius: 100,
-    elevation: 30,
-    position: "relative",
+    shadowOpacity: 0.58,
+    shadowRadius: 16.0,
+    elevation: 24,
   },
   gambartop: {
-    height: 204,
-    width: 390,
-    left: 0,
-    top: 0,
+    height: 230,
+    width: width,
   },
   gambar1: {
     borderRadius: 20,
     height: 80,
     width: 80,
+    resizeMode: "contain",
   },
   gambar2: {
     borderRadius: 20,
     height: 80,
     width: 80,
+    resizeMode: "contain",
   },
   teks1: {
     fontWeight: "bold",

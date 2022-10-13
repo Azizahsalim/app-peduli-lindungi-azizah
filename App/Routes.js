@@ -5,7 +5,8 @@ import {
   LoginScreen,
   HomeScreen,
   CovidTestScreen,
-  Imunisasi
+  Imunisasi,
+  Ehac
 } from "./pages";
 
 const Stack = createStackNavigator();
@@ -37,6 +38,11 @@ export default Router = () => {
         name="Imunisasi"
         component={Imunisasi}
         options={{ headerShown: true, title: "Vaksin dan Imunisasi" }}
+      />
+      <Stack.Screen
+        name="Ehac"
+        component={Ehac}
+        options={{ headerShown: true, title: "EHAC" }}
       />
     </Stack.Navigator>
   );
