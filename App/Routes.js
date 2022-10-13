@@ -26,7 +26,11 @@ export default Router = () => {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      
+      <Stack.Screen
+        name="CovidTestScreen"
+        component={CovidTestScreen}
+        options={{ headerShown: true, title: "COVID - 19 Test Results" }}
+      />
     </Stack.Navigator>
   );
 };

@@ -96,7 +96,7 @@ export default HomeScreen = ({ navigation }) => {
         <View style={styles.column}>
           <TouchableOpacity
             onPress={() =>
-              Alert.alert("Peringatan!!!", "Halaman ini Belum Dibuat", [
+              Alert.alert("Peringatan!!!", "Halaman ini dalam Proses", [
                 {
                   text: "ok",
                   onPress: () => console.log("ok ditekan"),
@@ -111,7 +111,7 @@ export default HomeScreen = ({ navigation }) => {
         <View style={styles.column}>
           <TouchableOpacity
             onPress={() =>
-              Alert.alert("Peringatan!!!", "Halaman ini Belum Dibuat", [
+              Alert.alert("Peringatan!!!", "Halaman ini dalam Proses", [
                 {
                   text: "ok",
                   onPress: () => console.log("ok ditekan"),
@@ -126,7 +126,7 @@ export default HomeScreen = ({ navigation }) => {
         <View style={styles.column}>
           <TouchableOpacity
             onPress={() =>
-              Alert.alert("Peringatan!!!", "Halaman ini Belum Dibuat", [
+              Alert.alert("Peringatan!!!", "Halaman ini dalam Proses", [
                 {
                   text: "ok",
                   onPress: () => console.log("ok ditekan"),
@@ -144,7 +144,7 @@ export default HomeScreen = ({ navigation }) => {
         <View style={styles.column}>
           <TouchableOpacity
             onPress={() =>
-              Alert.alert("Peringatan!!!", "Halaman ini Belum Dibuat", [
+              Alert.alert("Peringatan!!!", "Halaman ini dalam Proses", [
                 {
                   text: "ok",
                   onPress: () => console.log("ok ditekan"),
@@ -159,7 +159,7 @@ export default HomeScreen = ({ navigation }) => {
         <View style={styles.column}>
           <TouchableOpacity
             onPress={() =>
-              Alert.alert("Peringatan!!!", "Halaman ini Belum Dibuat", [
+              Alert.alert("Peringatan!!!", "Halaman ini dalam Proses", [
                 {
                   text: "ok",
                   onPress: () => console.log("ok ditekan"),

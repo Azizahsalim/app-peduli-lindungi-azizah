@@ -1,11 +1,13 @@
-//import HomeScreen from "./HomeScreen";
+import HomeScreen from "./HomeScreen";
 import SplashScreen from "./SplashScreen";
 import LoginScreen from "./LoginScreen";
+import Imunisasi from "./Imunisasi";
 
 
 export {
-  //HomeScreen,
+  HomeScreen,
   SplashScreen,
   LoginScreen,
+  Imunisasi
   
 };
